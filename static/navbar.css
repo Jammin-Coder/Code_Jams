@@ -1,0 +1,86 @@
+/* All items that need a display of flex */
+.nav-items,
+.nav-expand-button {
+	display: flex;
+}
+
+
+
+/***** Navbar styles *****/
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: block;
+	min-height: 3.2em;
+	width: 100%;
+	padding: 1em 2em;
+	overflow: hidden;
+
+	font-size: var(--fs-400);
+	background-color: rgba(0, 0, 0, 0.904);
+}
+
+
+/* This needs to come after '.navbar' */
+.navbar-expanded {
+	overflow: visible;
+	display: block !important;
+}
+
+.nav-collapsing-content {
+	margin-top: 1em;
+	display: none;
+}
+
+
+/* Nav content types */
+.nav-items {
+	font-family: "Roboto", serif;
+}
+
+.nav-item {
+	margin-right: 1em;
+}
+/* End nav content types */
+
+
+/* Expand button styles */
+.nav-expand-button {
+	margin: 0;
+	background-color: rgba(0, 0, 0, .1);
+	width: 2.5em;
+	height: 2em;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nav-expand-button:hover {
+	background-color: rgba(0, 0, 0, .2);
+}
+
+.expand-icon-line {
+	height: .01em;
+	width: 85%;
+	background-color: white;
+	margin: 4px auto;
+}
+/* End expand button styles */
+
+
+
+/* When the screen grows bigger than 30em, expand the navbar. */
+@media screen and (min-width: 30em){
+	.navbar, .nav-items {
+		display: flex;
+	}
+
+	.nav-collapsing-content {
+		margin: 0;
+	}
+
+	.nav-expand-button {
+		display: none;
+	}
+}

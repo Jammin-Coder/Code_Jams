@@ -1,0 +1,102 @@
+<!-- This part would be included from a PHP file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Font for the brand -->
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<!-- Font for nav items -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/navbar.css">
+    <link rel="stylesheet" type="text/css" href="static/app.css">
+	<title>Code_Jams</title>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="nav-expand-button nav-item">
+			<div class="expand-icon-line"></div>
+			<div class="expand-icon-line"></div>
+			<div class="expand-icon-line"></div>
+		</div>
+		<ul class="nav-items nav-collapsing-content">
+			<li><a href="#" class="nav-brand logo nav-link nav-item">Code_Jams</a></li>
+			<li><a href="#" class="nav-link nav-item">Browse</a></li>
+			<li><a href="#" class="nav-link nav-item">Contact</a></li>
+			<li><a href="#" class="nav-link nav-item">About</a></li>
+		</ul>
+	</nav>
+
+    <!-- This bit would be in the index.php file -->
+    <div class="centering-container">
+        <section class="container d-flex flex-col gap-small">
+            <section class="card epic-card d-flex flex-col align-items-center text-center">
+                <header class="welcome-header">
+                    Welcome to
+                    <h1 class="logo text-gradient chrome-text-gradient">Code_Jams</h1>
+                    <h4>Your all in 1 solution to all of your tech problems</h4>
+                </header>
+            </section>
+    
+            <div class="card epic-card d-flex flex-col text-center">
+                <section class="card-content-group">
+                    <header class="card-header">Find answers</header>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quaerat doloremque reiciendis obcaecati? Amet, tempore neque? Quia quibusdam, exercitationem inventore dolorum deserunt modi quos consequuntur eligendi officiis tempore sunt officia.
+                    </p>
+                </section>
+                <section class="d-flex flex-col card-content-group text-center">
+                    <header class="card-header">Lorem Ipsum</header>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nihil eius quaerat doloribus aliquam fugiat repellendus molestias nam laborum earum nulla assumenda dolorum numquam, ad expedita cupiditate? Minus, doloremque.
+                    </p>
+                </section>
+                <section class="d-flex flex-col card-content-group text-center">
+                    <header class="card-header">Lorem Ipsum</header>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur nihil eius quaerat doloribus aliquam fugiat repellendus molestias nam laborum earum nulla assumenda dolorum numquam, ad expedita cupiditate? Minus, doloremque.
+                    </p>
+                </section>
+            </div>
+    
+            <div class="card epic-card d-flef flex-col">
+                <section class="card-content-group d-flex flex-col gap-small">
+                
+                    <p class="max-width-100 text-center">If this all sounds good to you, why not</p>
+                    <header class="card-header text-center">Make an Account</header>
+                    
+
+                    <form method="POST" class="d-flex gap-small">
+                        <div class="form-input d-flex flex-col">
+                            <label for="username" class="text-left">Username:</label>
+                            <input type="text" name="username" id="username">
+                        </div>
+                        
+                        <div class="form-input d-flex flex-col">
+                            <label for="email" class="text-left">Email:</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        
+                        <div class="form-input d-flex flex-col">
+                            <label for="password" class="text-left">Password:</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+    
+                        <div class="form-input d-flex flex-col">
+                            <label for="confirm-password" class="text-left">Confirm Password:</label>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                        </div>
+                    </form>
+                    <small class="text-center">
+                        Already have an account? <a href="login.php">Log in</a>
+                    </small>
+                </section>
+            </div>
+        </section>
+    </div>
+
+    <!-- This part would be included from a footer PHP file -->
+    <script src="static/app.js"></script>
+    <script src="static/navbar.js"></script>
+</body>
+</html>
