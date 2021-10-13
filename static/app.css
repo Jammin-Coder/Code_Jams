@@ -59,7 +59,7 @@ p {
 }
 
 h1, h2, h3 {
-	line-height: 1;
+	line-height: 1.2;
 }
 
 /* Utility classes */
@@ -127,6 +127,31 @@ h1, h2, h3 {
 	max-width: 100%;
 }
 
+.max-width-50 {
+	max-width: 50%;
+}
+
+/* Spacing */
+.m-1 {
+	margin: 1em;
+}
+
+.m-2 {
+	margin: 2em;
+}
+
+
+.mb-1 {
+	margin-bottom: 1em;
+}
+
+.mt-4 {
+	margin-top: 4em;
+}
+
+.margin-auto {
+	margin: auto;
+}
 
 html {
 	font-size: 20px;
@@ -142,9 +167,13 @@ body {
 	color: white;
 }
 
-.container {
+.container, .small-container {
 	padding: 2em 1em;
 	width: clamp(0em, 70em, 100%);
+}
+
+.small-container {
+	width: clamp(0em, 50em, 100%);
 }
 
 .centering-container {
@@ -176,9 +205,8 @@ body {
 }
 
 
+
 /****** Design Elements *****/
-
-
 
 /* Cards */
 .card-header {
@@ -228,7 +256,10 @@ form {
 	min-width: 100%;
 }
 
-
+.form-button {
+	padding: .7em 2em;
+	border-radius: .8em;
+}
 
 @media screen and (min-width: 35em)
 {
