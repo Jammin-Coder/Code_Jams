@@ -1,0 +1,48 @@
+<!-- This part would be included from a PHP file -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Font for the brand -->
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+	<!-- Font for nav items -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/navbar.css">
+    <link rel="stylesheet" type="text/css" href="static/app.css">
+	<title>Code_Jams</title>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="nav-expand-button nav-item">
+			<div class="expand-icon-line"></div>
+			<div class="expand-icon-line"></div>
+			<div class="expand-icon-line"></div>
+		</div>
+		<ul class="nav-items nav-collapsing-content">
+			<li><a href="#" class="nav-brand logo nav-link nav-item">Code_Jams</a></li>
+			<li><a href="#" class="nav-link nav-item">Browse</a></li>
+			<li><a href="#" class="nav-link nav-item">Contact</a></li>
+			<li><a href="#" class="nav-link nav-item">About</a></li>
+		</ul>
+	</nav> 
+
+    
+    <div class="centering-container">
+        <section class="mt-4 epic-card small-container d-flex flex-col gap-med">
+            <h1 class="logo text-gradient chrome-text-gradient text-center m-1">Log In to Code_Jams</h1>
+            <form action="#" method="POST" class="d-flex flex-col align-items-center gap-med">
+                <div class="form-input d-flex flex-col max-width-50">
+                    <label for="username" class="text-center">Username or Email</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="form-input d-flex flex-col max-width-50">
+                    <label for="password" class="text-center">Password</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button type="submit" class="form-button">Log In</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
